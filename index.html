@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <form name="myForm" onsubmit="return validate()">
+    <form name="myForm" class="form" onsubmit="return validate()">
         <div class="input_contact">
             <input type="text" placeholder="Имя" name="first_name">
             <input type="text" placeholder="Фамилия" name="last_name">
@@ -16,11 +17,11 @@
             <input type="text" placeholder="Тел." name="tel">
         </div>
         <div class="input_label">
-            <label><span>Время</span><input type="text" name="time"></label>
-            <label><span>Дата</span><input type="text" name="date" id="datepicker"></label>
+            <input type="text" placeholder="Время" name="time">
+            <input type="text" placeholder="Дата" name="date" id="datepicker">
         </div>
         <div class="submit_button">
-            <input type="submit" value="Отправить">
+            <button  value="Отправить" class="btn">Submit</button>
         </div>
     </form>
 
