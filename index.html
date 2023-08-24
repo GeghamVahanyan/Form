@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="myForm" onsubmit="return validate()">
+        <div class="input_contact">
+            <input type="text" placeholder="Имя" name="first_name">
+            <input type="text" placeholder="Фамилия" name="last_name">
+            <input type="text" placeholder="Е-майл" name="email">
+            <input type="text" placeholder="Тел." name="tel">
+        </div>
+        <div class="input_label">
+            <label><span>Время</span><input type="text" name="time"></label>
+            <label><span>Дата</span><input type="text" name="date" id="datepicker"></label>
+        </div>
+        <div class="submit_button">
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
